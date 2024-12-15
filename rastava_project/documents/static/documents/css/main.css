@@ -1,0 +1,283 @@
+/** {*/
+/*    border: 1px solid hotpink !important;*/
+/*}*/
+
+@font-face {
+    font-family: NewtonXCTT;
+    src: url(../fonts/NWX95__C.TTF);
+}
+a.Hov:hover{
+    background-color: lightcyan;
+}
+a.Hov{
+    background-color: ghostwhite;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+main{
+    margin-top: 2rem;
+}
+
+body{
+    height: 100%;
+    min-height:100%;
+}
+
+.navIndex{
+    background-color: #00838f;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+}
+
+.btn-info{
+    background-color: #00acc1;
+}
+
+.btn-success { border: 0.0625rem solid #1e7e34; }
+.btn-danger { border: 0.0625rem solid #af3236; }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.875rem;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* <!-- Footer --> */
+
+.mainfooter{
+    background-color: #1C2331;
+    /*clear: both;*/
+    /*position: relative;*/
+    /*height: 200px;*/
+    /*margin-top: -200px;*/
+    /*background-color: #00695c;*/
+}
+.mainfooter a,.mainfooter a:link{
+    text-decoration: none;
+    color: ghostwhite;
+}
+footer hr{
+    /*background-color: #7c4dff !important;*/
+    background-color: #00838f !important;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/font-awe/fontello.woff'),
+    url('../fonts/font-awe/fontello.svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.demo-icon
+{
+    font-family: "fontello";
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /*opacity: .8;*/
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.footer-header div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-header{
+    padding: 1.2rem;
+    /*background-color: #6351ce;*/
+    background-color: #00838f;
+    /*background: #2BBBAD;*/
+}
+.footer-header h6{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+
+.footer-links h6{
+    color: #fff;
+}
+.footer-links p,address{
+    font-weight: 300;
+    color: #fff;
+}
+
+
+.footer-copyright{
+    height: 3rem;
+    color: rgba(255,255,255,.6);
+    background-color:#161c27;
+}
+
+/* <!-- Footer --> */
+
+
+
+
+
+
+
+
+/* <!-- main product --> */
+
+
+/*.card{*/
+/*    width: 25px;*/
+/*}*/
+.container{
+    /*width: 33%;*/
+    max-width: 85%;
+}
+main .container:last-child section:last-child {
+    flex: 0 33% !important;
+}
+.card-footer{
+    margin-top: auto;
+
+}
+.beta{
+    height: 38rem;
+    overflow: hidden;
+    /*background-color: lightgray;*/
+    /*box-shadow: 0 -23px 18px -4px #f8f9fa inset;*/
+}
+.beta img{
+    width: -moz-available;
+}
+
+.card.chart-card .classic-tabs .nav li a.active {
+    border-bottom: 2px solid;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -o-transition: width .5s ease, background-color .5s ease;
+    transition: width .5s ease, background-color .5s ease; }
+.card.chart-card .classic-tabs .nav.tabs-white li a {
+    color: #757575;
+    font-weight: 500; }
+.card.chart-card .classic-tabs .nav.tabs-white li a.active {
+    color: #673ab7; }
+.card.chart-card .btn-deep-purple-accent {
+    background-color: #b388ff;
+    margin-top: -65px; }
+.card.chart-card .btn-deep-purple-accent i {
+    color: #000 !important; }
+.card.chart-card .btn-teal-accent {
+    background-color: #1de9b6;
+    margin-top: -65px; }
+.card.chart-card .btn-teal-accent i {
+    color: #000 !important; }
+.classic-tabs{
+    overflow: hidden;
+}
+.classic-tabs .nav {
+    white-space: nowrap;
+    position: relative;
+    /*border-radius: .3rem .3rem 0 0;*/
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+.tabs-white {
+    background-color: #fff !important;
+}
+.fade:not(.show) {
+    opacity: 0;
+}
+.tab-content > .tab-pane {
+    display: none;
+}
+.tab-content {
+    padding: 1rem;
+}
+.fade {
+    transition: opacity .15s linear;
+}
+.tab-content > .active {
+    display: block;
+}
+.z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+}
+
+/*test  one*/
+.card-nav {
+
+    /*border: 1px solid green;*/
+}
+
+.card-nav *{
+    /*border: 1px solid hotpink;*/
+}
+
+.card-nav a {
+    min-width: 14.28%;
+    width: 14.28%;
+    padding: 0;
+    height: 3em;
+    transition: all 0.5s;
+}
+.card-nav a div {
+    width: 14.28%;
+    min-width: 14.28%;
+    margin: auto;
+    z-index: 10;
+    line-height: 3em;
+    text-align: center;
+    color: #6c757d;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card-nav a.active {
+    min-width: 42.85%;
+    width: 42.85%;
+}
+.card-nav a.active div {
+    color: #123;
+    width: 100%;
+    background-color: lightsteelblue;
+}
+
+.card-nav a:nth-child(3) div {
+    padding: 0 3rem 0 0;
+}
+
+.card-nav a.active:nth-child(3) div {
+    padding: 0 !important;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+.card-nav a.active:nth-child(1) div {
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+/* <!-- main product --> */

@@ -1,0 +1,339 @@
+.md-form {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.md-form input[type="text"]:focus:not([readonly]) + label{
+    color: #4285f4;
+}
+.md-form input[type="text"]:not(:placeholder-shown):not([readonly]) + label{
+    color: #4285f4;
+}
+
+.md-form input[type="email"]:focus:not([readonly]) + label{
+    color: #4285f4;
+}
+.md-form input[type="email"]:not(:placeholder-shown):not([readonly]) + label{
+    color: #4285f4;
+}
+
+.md-form input[type="password"]:focus:not([readonly]) + label{
+    color: #4285f4;
+}
+.md-form input[type="password"]:not(:placeholder-shown):not([readonly]) + label{
+    color: #4285f4;
+}
+
+.md-form input[type="text"]:focus:not([readonly]),input[type="email"]:focus:not([readonly]),input[type="password"]:focus:not([readonly]){
+    box-shadow: 0 1px 0 0 #4285f4;
+    border-bottom: 1px solid #4285f4;
+}
+.md-form input[type="text"]:not(:placeholder-shown):not([readonly]),input[type="email"]:not(:placeholder-shown):not([readonly]),input[type="password"]:not(:placeholder-shown):not([readonly]){
+    box-shadow: 0 1px 0 0 #4285f4;
+    border-bottom: 1px solid #4285f4;
+}
+
+.md-form input[type="text"],input[type="email"],input[type="password"]{
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    box-sizing: content-box;
+    background-color: transparent;
+}
+
+.md-form label.active {
+    transform: translateY(-14px) scale(.8);
+}
+.md-form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    transition: transform .2s ease-out,color .2s ease-out;
+    transform-origin: 0 100%;
+    transform: translateY(12px);
+    cursor: text;
+    color: #757575;
+}
+
+.md-form .form-control{
+    font-family: Roboto,sans-serif;
+    margin: 0 0 .5rem 0;
+    border-radius: 0;
+    padding: .6rem 0 .4rem 0;
+    background-color: transparent;
+    height: auto;
+}
+.md-form .form-control:focus {
+    box-shadow: none;
+}
+.md-form .form-control:not(:placeholder-shown) {
+    box-shadow: none;
+}
+.md-form input[type="checkbox"]{
+    border: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+.form-control:not(:placeholder-shown) {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.form-control:focus + label{
+    transform: translateY(-14px) scale(.8);
+
+}
+.form-control:not(:placeholder-shown) + label{
+    transform: translateY(-14px) scale(.8);
+
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.form-check-input[type="checkbox"]:checked + label::before{
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 1.375rem;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #4285f4;
+    border-bottom: 2px solid #4285f4;
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+}
+.form-check-input[type="checkbox"] + label::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #8a8a8a;
+    border-radius: 1px;
+    margin-top: 3px;
+    transition: .2s;
+}
+.form-check-input[type="checkbox"]:not(.filled-in) + label::after{
+    border: 0;
+    transform: scale(0);
+}
+.form-check-input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5625rem;
+    line-height: 1.5625rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.grey-text {
+    color: #9e9e9e !important;
+}
+
+
+/* <!-- Ripple --> */
+
+.wavy {
+    display: inline-block;
+    width: 250px;
+    height: 74px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    color: ghostwhite;
+    background: linear-gradient(40deg,#45cafc,#303f9f) !important;
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+
+    outline: none;
+    transition: all 2.9s cubic-bezier(0, 0, 1, 0.07);
+    transition-delay: 12s;
+}
+.wavy:focus {
+    background: #53F39A;
+    color: white;
+    transition: all .2s cubic-bezier(0, 0, 1, 0.07);
+    transition-delay: .2s;
+
+}
+.wavy:hover {
+    box-shadow: 0 3px 11px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+
+
+/*********************
+  Waves
+**********************/
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all 0.3s ease-out;
+}
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.7s ease-out;
+    transition-property: transform, opacity;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-effect.waves-greeny .waves-ripple {
+  background-color: rgba(83, 243, 154, 0.7);
+}
+
+.waves-effect.waves-red .waves-ripple {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+.waves-effect.waves-yellow .waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7);
+}
+
+.waves-effect.waves-orange .waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7);
+}
+
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7);
+}
+
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7);
+}
+
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7);
+}
+
+.waves-notransition {
+    transition: none !important;
+}
+.waves-circle {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.waves-input-wrapper {
+    border-radius: 0.2em;
+    vertical-align: bottom;
+}
+.waves-input-wrapper .waves-button-input {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.waves-circle {
+    text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    -webkit-mask-image: none;
+}
+.waves-block {
+    display: block;
+}
+
+
+/* Firefox Bug: link not triggered */
+
+a.waves-effect .waves-ripple {
+    z-index: -1;
+}
+
+
+/*********************
+  Media Query Classes
+**********************/
+
+@media only screen and (max-width: 600px) {
+    .center-on-small-only {
+        text-align: center;
+    }
+}
+
+.no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.space-30 {
+    height: 30px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.vertical-center {
+    margin: 0;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+/* <!-- Ripple --> */
+

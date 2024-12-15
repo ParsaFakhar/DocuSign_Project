@@ -1,0 +1,65 @@
+{% extends 'documents/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block rel %}
+    <link rel="stylesheet" href="{% static 'users/css/login.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+    <div class="border-0 card card_edit mx-xl-5">
+
+        <!-- Card body -->
+        <div class="card-body">
+
+            <!-- Material form register -->
+            <form method="post">
+                {% csrf_token %}
+                <p class="h4 text-center py-4">{% trans "Sign In" %}</p>
+                <hr style="background-color:#2196f3; width: 20%;">
+
+                <!-- Material input text -->
+                <div class="md-form">
+                    {{ form.username }}
+                    <label for="{{ form.username.id_for_label }}" class="font-weight-light">{% trans "Your name" %}</label>
+                </div>
+
+                <!-- Material input password -->
+                <div class="md-form">
+                    {{ form.password }}
+                    <label for="{{ form.password.id_for_label }}" class="font-weight-light">{% trans "Your password" %}</label>
+                </div>
+
+
+                <div class="text-center mt-5">
+                    <button type="submit" onClick="clk()" class="wavy waves-effect waves-light">{% trans "Sign In" %}</button>
+                </div>
+
+                <small class="d-flex mt-5 mt-sm-0 justify-content-center justify-content-sm-end">{% trans "Don't have an Account?&nbsp;" %}<a href="{% url 'register' %}">{% trans "Sign Up" %}</a></small>
+
+            </form>
+            <!-- Material form register -->
+
+        </div>
+        <!-- Card body -->
+
+    </div>
+
+{% endblock %}
+
+
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+            $(".md-form input[type=text],input[type=password]").attr("class","form-control")
+                                                               .attr("placeholder", ' ');
+     });
+
+</script> <!-- Input-Style -->
+
+<script src="{% static 'users/js/ripple-On-Sign.js' %}"></script><!-- ripple-On-Sign -->
+{% endblock %}

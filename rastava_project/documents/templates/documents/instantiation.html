@@ -1,0 +1,13 @@
+<!-- templates/documents/instantiation.html -->
+{% extends 'documents/base.html' %}
+
+{% block content %}
+
+        <h1>Instantiate a Contract</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create and Send Contract</button>
+    </form>
+
+{% endblock %}

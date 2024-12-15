@@ -1,0 +1,79 @@
+{% extends 'documents/base.html' %}
+{% load static %}
+
+{% block rel %}
+    <link rel="stylesheet" href="{% static 'users/css/login.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="border-0 card card_edit mx-xl-5">
+
+        <!-- Card body -->
+        <div class="card-body">
+
+            <!-- Material form register -->
+            <form method="POST">
+                {% csrf_token %}
+                <p class="h4 text-center py-4">Sign Up</p>
+                <hr style="background-color:#2196f3; width: 20%;">
+
+
+                <!-- Material input text -->
+                <div class="md-form">
+                    {{ form.username }}
+                    <label for="{{ form.username.id_for_label }}" class="font-weight-light">Your name</label>
+                </div>
+
+
+                <!-- Material input email -->
+                <div class="md-form">
+                    {{ form.email }}
+                    <label for="{{ form.email.id_for_label }}" class="font-weight-light">Your email</label>
+                </div>
+
+
+                <!-- Material input password -->
+                <div class="md-form">
+                    {{ form.password1 }}
+                    <label for="{{ form.password1.id_for_label }}" class="font-weight-light">Your password</label>
+                </div>
+
+
+                <!-- Material Confirm password -->
+                <div class="md-form">
+                    {{ form.password2 }}
+                    <label for="{{ form.password2.id_for_label }}" class="font-weight-light">Confirm your password</label>
+                </div>
+
+                <!-- Material input checkbox -->
+                <div class="md-form mt-5">
+                    {{ form.checker }}
+                    <label for="{{ form.checker.id_for_label }}" class="grey-text">Accept the
+                        <a href="#" style="color:#2196f3;"> Terms and Conditions</a>
+                    </label>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button type="submit" onClick="clk()" class="wavy waves-effect waves-light">Sign Up</button>
+                </div>
+
+                <small class="d-flex mt-5 mt-sm-0 justify-content-center justify-content-sm-end">Already have an Account?&nbsp;<a href="{% url 'login' %}">Sign In</a></small>
+
+            </form>
+            <!-- Material form register -->
+
+        </div>
+        <!-- Card body -->
+
+    </div>
+
+
+{% endblock %}
+
+
+
+{% block js %}
+<script src="{% static 'users/js/ripple-On-Sign.js' %}"></script><!-- ripple-On-Sign -->
+{% endblock %}

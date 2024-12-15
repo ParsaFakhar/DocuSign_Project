@@ -1,0 +1,27 @@
+.carousel-item {
+    position: absolute;
+    top: -10rem;
+}
+.carousel-inner{
+    position: relative;
+    height: 65vh;
+}
+.carousel-caption{
+    padding-bottom: 17vh;
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.55) 10%,rgba(0,0,0,0) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    right: 0;
+    left: 0;
+}
+
+.footer-header div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_edit{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid rgba(0,0,0,.125) !important;
+    border-radius: .25rem !important;
+}
